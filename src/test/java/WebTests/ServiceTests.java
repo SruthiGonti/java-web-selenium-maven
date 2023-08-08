@@ -18,7 +18,7 @@ import java.io.Reader;
 import java.util.concurrent.TimeUnit;
 import java.io.IOException;
 import static org.junit.Assert.assertTrue;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ServiceTests {
