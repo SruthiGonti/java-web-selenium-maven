@@ -23,7 +23,7 @@ import static org.junit.Assert.assertTrue;
 public class ServiceTests {
 
     WebDriver driver;
-    browserType type = browserType.CHROME_MAC;
+    browserType type = browserType.CHROME_WIN;
     ServiceHomePage serviceHomePageObj;
     ServiceApplyNumberPlatePage serviceApplyNumberPlatePageObj;
     ServiceLocateUsPage serviceLocateUsPageObj;
