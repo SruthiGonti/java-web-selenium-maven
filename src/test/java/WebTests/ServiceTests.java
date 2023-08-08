@@ -18,12 +18,18 @@ import java.io.Reader;
 import java.util.concurrent.TimeUnit;
 import java.io.IOException;
 import static org.junit.Assert.assertTrue;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ServiceTests {
 
     WebDriver driver;
     browserType type = browserType.CHROME_WIN;
+    System.setProperty("webdriver.chrome.driver", "C:/Users/000Z7A744/Downloads/chromedriver.exe");
+    System.setProperty("webdriver.chrome.binary", "C:/Program Files/Google/Chrome/Application/chrome.exe");
+	ChromeOptions options = new ChromeOptions();
+    options.addArguments("--disable-notifications");
+    driver = new ChromeDriver(options);
     ServiceHomePage serviceHomePageObj;
     ServiceApplyNumberPlatePage serviceApplyNumberPlatePageObj;
     ServiceLocateUsPage serviceLocateUsPageObj;
