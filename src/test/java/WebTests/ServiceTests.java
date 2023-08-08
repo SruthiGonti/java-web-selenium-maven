@@ -26,8 +26,9 @@ public class ServiceTests {
     WebDriver driver;
     browserType type = browserType.CHROME_WIN;
     System.setProperty("webdriver.chrome.driver", "C:/Users/000Z7A744/Downloads/chromedriver.exe");
-    System.setProperty("webdriver.chrome.binary", "C:/Program Files/Google/Chrome/Application/chrome.exe");
-	ChromeOptions options = new ChromeOptions();
+   // System.setProperty("webdriver.chrome.binary", "C:/Program Files/Google/Chrome/Application/chrome.exe");
+    ChromeOptions options = new ChromeOptions();
+    options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");
     options.addArguments("--disable-notifications");
     driver = new ChromeDriver(options);
     ServiceHomePage serviceHomePageObj;
